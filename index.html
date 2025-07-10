@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Company PortFolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#project">Projects</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        <header>
+            <h1>Welcome to Company Profile</h1>
+            <p>Frontend Devloper</p>
+        </header>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a technology Company providing software solutions since 2021.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Development</li>
+                <li>Python</li>
+                <li>Cloud Consulting</li>
+                <li>JavaSript</li>
+            </ul>
+        </section>
+        <section id="project">
+            <h2>Projects</h2>
+            <section id="gallery">
+              <div class="gallery">
+          
+                <div class="gallery-item">
+                  <img src="project1.jpg" alt="Project 1">
+                  <div class="overlay">
+                    <h3>School Management System</h3>
+                    <p>Web-based admin dashboard & student portal</p>
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                      </div>
+                    <a href="https://smackoley.vercel.app/" target="_blank" class="view-btn">View Project</a>
+                  </div>
+                </div>
+          
+                <div class="gallery-item">
+                  <img src="images/project2.jpg" alt="Project 2">
+                  <div class="overlay">
+                    <h3>Checkmate Cheque Processor</h3>
+                    <p>AI-powered bank cheque verification system</p>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>Streamlit</span>
+                      </div>
+                    <a href="https://github.com/yourusername/cheque-processor" target="_blank" class="view-btn">View Project</a>
+                  </div>
+                </div>
+          
+              </div>
+            </section>
+          </section>
+          
+        
+        <section id="team">
+            <h2>Our Team</h2>
+            <p>We are a group of Passionate developrs and designers.</p>
+        </section>
+
+        <section id="testimonials">
+            <h2>What Clients Say</h2>
+            <blockquote>“Company Portfolio delivered exactly what we needed — on time and within budget. Highly recommended!”</blockquote>
+            <p>- Ranjeet Kumar, CEO, eduTrack</p>
+        </section>
+
+        <section id="team">
+            <h2>Our Team</h2>
+            <div class="team-container">
+              <div class="team-member">
+                <button onclick="images">Images</button>
+                <label for="uploadRanjeet"></label>
+                <input type="file" id="uploadRanjeet" style="display: none;" accept="image/*" onchange="previewImage(this, 'ranjeetPreview')">
+                <h3>Ranjeet Kumar</h3>
+                <p>Frontend Developer</p>
+              </div>
+              <div class="team-member">
+                <button onclick="images">Images</button>
+                <h3>Aarti Sharma</h3>
+                <p>UI/UX Designer</p>
+              </div>
+              <div class="team-member">
+                <button onclick="images">Images</button>
+                <h3>Amit Verma</h3>
+                <p>Backend Developer</p>
+              </div>
+            </div>
+        </section>
+          
+          
+          <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email:durveranjeet05@gmail.com</p>
+            <p>phone: +91 7858003712</p>
+            <a href="https://wa.me/917858003712" target="_blank">📱 WhatsApp</a>
+        </section>
+
+        <form onsubmit="validateForm()">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+          
+
+        <footer>
+            <p>&copy; 2025 Company Portfolio. All rights reserved.</p>
+            <a href="https://www.linkedin.com/in/ranjeet-kumar-474b8b23a/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/ranjeetdurve" target="_blank">GitHub</a>
+        </footer>
+        <script src="script.js"></script>
+          
+    </body>
+</html>
